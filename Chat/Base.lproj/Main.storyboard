@@ -30,12 +30,18 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="agregarPregunta:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="6UI-XW-dGp"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGD-XC-gad">
                                 <rect key="frame" x="153" y="539" width="69" height="30"/>
                                 <state key="normal" title="Preguntar"/>
+                                <connections>
+                                    <action selector="pregunta:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kVv-oE-PS5"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👨🏼‍💻" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSX-ie-Mi0">
                                 <rect key="frame" x="150" y="35" width="75" height="84"/>
@@ -66,6 +72,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="insertarPregunta" destination="2kY-ka-iIF" id="YZB-Xu-tTB"/>
+                        <outlet property="labelPreguntar" destination="gGD-XC-gad" id="5Sx-id-JvI"/>
+                        <outlet property="respuestaJavier" destination="A42-og-7ov" id="X85-wg-Ht8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
